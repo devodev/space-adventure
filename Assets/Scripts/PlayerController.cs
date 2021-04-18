@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -8,19 +10,36 @@ public class PlayerController : MonoBehaviour {
 
     Collider2D col;
     Rect bounds;
+    bool canMove = true;
 
-    protected void Start() {
+    void Start() {
         col = GetComponentInChildren<Collider2D>();
-
         bounds = computeBounds();
     }
 
-    protected void Update() {
+    void Update() {
         movePlayer();
         limitPlayer();
     }
 
+    void OnCollisionEnter2D(Collision2D _) {
+        canMove = false;
+        GetComponentInChildren<Renderer>().enabled = false;
+        // TODO: Fix HACK
+        StartCoroutine(restartScene());
+    }
+
+    IEnumerator restartScene() {
+        yield return new WaitForSeconds(1f);
+        Scene thisScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(thisScene.name);
+    }
+
     void movePlayer() {
+        if (!canMove) {
+            return;
+        }
+
         var xAxis = Input.GetAxisRaw("Horizontal");
         var yAxis = Input.GetAxisRaw("Vertical");
 
