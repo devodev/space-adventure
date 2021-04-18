@@ -491,22 +491,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1388526573191725492, guid: 1a1622dc335c33d489f2c45cf61da461, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1388526573191725492, guid: 1a1622dc335c33d489f2c45cf61da461, type: 3}
-      propertyPath: m_Constraints
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1388526573191725492, guid: 1a1622dc335c33d489f2c45cf61da461, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1388526573191725493, guid: 1a1622dc335c33d489f2c45cf61da461, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a1622dc335c33d489f2c45cf61da461, type: 3}
 --- !u!4 &786210195 stripped
@@ -784,25 +768,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1437193333492597984, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
   m_PrefabInstance: {fileID: 1285816434}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1309230528 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1388526573191725491, guid: 1a1622dc335c33d489f2c45cf61da461, type: 3}
-  m_PrefabInstance: {fileID: 613054367}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1309230532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309230528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09acf6ca4c48c574d9559710b9e45ab4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageTakenAnimationDelay: 0.05
-  hitAnimation: {fileID: 6494678174453047389, guid: b3b0efb5c38855541abc01943d0eca16, type: 3}
 --- !u!212 &1384501786 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 1110261392047067633, guid: b67d1ac699ee4bc4ea42e8cf31a75066, type: 3}
@@ -893,11 +858,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1437193333492597984, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
   m_PrefabInstance: {fileID: 1537044994}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1861562092 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9142587502121333479, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
-  m_PrefabInstance: {fileID: 9142587501606280203}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2030893025
 PrefabInstance:
@@ -1073,10 +1033,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 446872373}
     m_Modifications:
-    - target: {fileID: 2006496919455616673, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9142587501049250200, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1122,10 +1078,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9142587501049250202, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9142587501049250202, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
       propertyPath: m_Name
       value: Spaceship 1
       objectReference: {fileID: 0}
@@ -1133,33 +1085,5 @@ PrefabInstance:
       propertyPath: Background
       value: 
       objectReference: {fileID: 1384501786}
-    - target: {fileID: 9142587501049250205, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
-      propertyPath: ShootPoint
-      value: 
-      objectReference: {fileID: 1861562092}
-    - target: {fileID: 9142587501049250205, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
-      propertyPath: background
-      value: 
-      objectReference: {fileID: 1384501786}
-    - target: {fileID: 9142587501049250205, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
-      propertyPath: BulletPrefab
-      value: 
-      objectReference: {fileID: 9223242608549248483, guid: 08608b05cc6e5414fbcf121962b397c2, type: 3}
-    - target: {fileID: 9142587501049250205, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
-      propertyPath: ShootDelayMs
-      value: 113.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 9142587501049250205, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
-      propertyPath: VelocityMultiplier
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 9142587501049250206, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be9b1c936bcd29d4abd1707ba46e4d9b, type: 3}

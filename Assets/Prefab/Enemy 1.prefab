@@ -91,8 +91,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1388526573191725490}
-  - component: {fileID: 1388526573191725492}
+  - component: {fileID: 8483722558640626512}
   - component: {fileID: 1388526573191725493}
+  - component: {fileID: 1309230532}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Untagged
@@ -115,7 +116,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1388526573191725492
+--- !u!50 &8483722558640626512
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -125,7 +126,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1388526573191725491}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 0.0001
   m_LinearDrag: 0
@@ -190,3 +191,17 @@ PolygonCollider2D:
       - {x: 0.66381574, y: -0.4571988}
       - {x: 0.6626408, y: 0.4840058}
       - {x: 1.1012838, y: 0.48070532}
+--- !u!114 &1309230532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388526573191725491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09acf6ca4c48c574d9559710b9e45ab4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTakenAnimationDelay: 0.05
+  hitAnimation: {fileID: 6494678174453047389, guid: b3b0efb5c38855541abc01943d0eca16, type: 3}
