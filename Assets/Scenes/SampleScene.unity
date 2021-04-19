@@ -221,6 +221,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
       propertyPath: m_Name
       value: Starfield (3)
       objectReference: {fileID: 0}
@@ -267,7 +271,7 @@ GameObject:
   m_Layer: 0
   m_Name: Starfield
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -397,6 +401,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1309230532, guid: 1a1622dc335c33d489f2c45cf61da461, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 3760841263583758490, guid: 7c6d94d17c546ee4f818e1cad1c2b726, type: 3}
     - target: {fileID: 1388526573191725490, guid: 1a1622dc335c33d489f2c45cf61da461, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -507,6 +515,10 @@ PrefabInstance:
     - target: {fileID: 1437193333492597984, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
       propertyPath: m_Name
@@ -637,6 +649,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
       propertyPath: m_Name
       value: Starfield (4)
       objectReference: {fileID: 0}
@@ -725,6 +741,10 @@ PrefabInstance:
     - target: {fileID: 1437193333492597984, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
       propertyPath: m_Name
@@ -822,6 +842,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
       propertyPath: m_Name
       value: Starfield (2)
       objectReference: {fileID: 0}
@@ -875,6 +899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 8
   Background: {fileID: 1384501786}
+  explosion: {fileID: 3760841263583758490, guid: 7c6d94d17c546ee4f818e1cad1c2b726, type: 3}
 --- !u!1001 &2030893025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -925,6 +950,10 @@ PrefabInstance:
     - target: {fileID: 1437193333492597984, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1437193333492597987, guid: 30f2ad05c9d060d4cb6f866f7c02e9dd, type: 3}
       propertyPath: m_Name

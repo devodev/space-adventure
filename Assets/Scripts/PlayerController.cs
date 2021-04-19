@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
     [Range(4f, 16f)]
     [SerializeField] float Speed = 8f;
     [SerializeField] SpriteRenderer Background;
+    [SerializeField] GameObject explosion;
 
     Collider2D col;
     Rect bounds;
@@ -29,8 +30,12 @@ public class PlayerController : MonoBehaviour {
         canMove = false;
         GetComponentInChildren<Renderer>().enabled = false;
         StartCoroutine(restartScene());
+        Instantiate(explosion, this.transform.position, Quaternion.identity);
     }
 
+    // TODO: update to send a player died event
+    // TODO: in GameManager, listen for this event
+    // TODO: and reload the scene or do something else
     IEnumerator restartScene() {
         yield return new WaitForSeconds(1f);
         GameManager.Instance.RestartScene();

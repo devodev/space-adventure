@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class Damageable : MonoBehaviour {
     [Range(0.01f, 10f)]
     [SerializeField] float damageTakenAnimationDelay = 0.05f;
     [SerializeField] GameObject hitAnimation;
+    [SerializeField] GameObject explosion;
 
     public float StartHealth { get; set; } = 100f;
     public float Health { get; private set; }
@@ -21,15 +23,20 @@ public class Damageable : MonoBehaviour {
     // TakeDamage substracts damage from health
     // and returns the health value.
     public float TakeDamage(float damage, Vector3 position) {
-        showHit(position);
-
-        Health -= damage;
         if (Health <= 0f) {
-            Destroy(gameObject);
             return 0f;
         }
 
-        updateColor();
+        showHit(position);
+
+        Health -= damage;
+
+        if (Health <= 0f) {
+            Health = 0f;
+            die();
+        } else {
+            updateColor();
+        }
 
         return Health;
     }
@@ -59,6 +66,16 @@ public class Damageable : MonoBehaviour {
                 rend.material.color = initialColor;
             }
         }
+    }
+
+    void die() {
+        GetComponentInChildren<Renderer>().enabled = false;
+        StartCoroutine(delayDestroy());
+        Instantiate(explosion, this.transform.position, Quaternion.identity);
+    }
+
+    IEnumerator delayDestroy() {
+        yield return new WaitForSeconds(1f);
     }
 
     void updateColor() {
