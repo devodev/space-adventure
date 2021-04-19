@@ -76,6 +76,7 @@ public class Damageable : MonoBehaviour {
 
     IEnumerator delayDestroy() {
         yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
     }
 
     void updateColor() {
